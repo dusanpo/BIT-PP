@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+    <h1>Movie Festival</h1>
+    <p>Movie</p>
+     <div class = "wrapp">
+    <label for="title">Title</label>
+    <input type="text" id = "titleInput" placeholder="Title">
+
+    <label for = "length">length(min)</label>
+    <input type = "number" id = "titleLength" placeholder="Length in min">
+
+    <select name="genre" id="genre">
+     <option value="">-</option>
+     <option value="Action">Action</option>
+     <option value="Comedy">Comedy</option>
+     <option value="Drama">Drama</option>
+     <option value="Thiller">Thriller</option>
+
+    </select>
+
+    <button id = "createMovieButton">Create Movie</button>
+
+    <p id = "errorDisplay"></p>
+
+    <ul id="newMoviesList"></ul>
+   </div>
+   
+    <p>Program</p>
+    <div class = "wrapp">
+
+
+        <div class="createProgram">
+            <label>Date
+                <input id="dateInput" type="date" placeholder="mm/dd/yyyy">
+            </label>
+            
+            <button id="createProgramBtn">Create program</button>
+            <p id="errorCreateProgram"></p>
+            <ul id="newProgramList"></ul>
+        </div>
+        <hr>
+
+
+    <label>Movie
+        <select name="selectMovie" id="selectMovie">
+            <option value="">-</option>
+        </select>
+    </label>
+
+    <label>Program
+        <select name="selectProgram" id="selectProgram">
+            <option value="">-</option>
+        </select>
+    </label>
+    <p id="errorAddMovieToProgram"></p>
+    <button id="addMovieToProgramBtn">Add movie to program</button>
+
+
+
+
+    </div>
+</div>
+
+    <script src = "JS/entites.js"></script>
+    <script src = "JS/form.js"></script>
+</body>
+</html>
