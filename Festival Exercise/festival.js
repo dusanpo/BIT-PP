@@ -140,7 +140,7 @@ function Genre(name){
              sum += elem.listOfMovies.length;
              
          });
-         result += "Weekeend festival has " + sum + " movie titles" + "\n";
+         result += "Weekend festival has " + sum + " movie titles" + "\n";
          this.listOfPrograms.forEach(function (elem){
              result += elem.getData();
              
